@@ -25,6 +25,8 @@ const formSchema = z.object({
   email: z.string().email({ message: "Email is invalid" }),
 });
 
+export const dynamic = 'force-dynamic'
+
 export default function ResetPassword() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);

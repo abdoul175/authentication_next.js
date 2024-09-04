@@ -4,6 +4,8 @@ import ButtonArea from "@/components/ButtonArea";
 import { getLoggedInUser } from "@/lib/actions/user.actions";
 import { redirect } from "next/navigation";
 
+export const dynamic = 'force-dynamic'
+
 export default async function Home() {
   const loggedInUser = await getLoggedInUser();
 

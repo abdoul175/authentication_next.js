@@ -31,6 +31,8 @@ const formSchema = z.object({
   }).trim(),
 });
 
+export const dynamic = 'force-dynamic'
+
 export default function SignUp() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);

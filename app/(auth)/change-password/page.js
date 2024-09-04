@@ -32,6 +32,8 @@ const formSchema = z.object({
     path: ["confirmPassword"],
 });
 
+export const dynamic = 'force-dynamic'
+
 function ChangePassword() {
     const router = useRouter();
 

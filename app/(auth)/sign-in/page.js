@@ -27,6 +27,8 @@ const formSchema = z.object({
   }),
 });
 
+export const dynamic = 'force-dynamic'
+
 export default function SignIn() {
 
   const router = useRouter()
